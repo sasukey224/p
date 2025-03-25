@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yabkal.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>football player / Artist / </p>
+        <div class="profile-pic">
+            <img src="p66.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Yoo, im yabkal and im a grade 11 student.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Achievments</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <img src="p1.jpg" alt="Project 1 Image">
+            <p>Description of the project.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="p2.jpg" alt="Project 2 Image">
+            <p>Description of the project.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="p3.jpg" alt="Project 2 Image">
+            <p>Description of the project.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="p4.jpg" alt="Project 2 Image">
+            <p>Description of the project.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="p5.jpg" alt="Project 2 Image">
+            <p>Description of the project.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out through any of the platforms below:</p>
+        <div class="social-links">
+            <a href="mailto:your.email@example.com">
+                <img src="email.jpg" alt="Email Logo">
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                <img src="LinkedIn.jpg" alt="LinkedIn Logo">
+            </a>
+            <a href="https://github.com/yourusername" target="_blank">
+                <img src="github.jpg" alt="GitHub Logo">
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank">
+                <img src="X.jpg" alt="Twitter Logo">
+            </a>
+        </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.style.transform = 'scale(0.95)';
+            });
+            button.addEventListener('mouseup', () => {
+                button.style.transform = 'scale(1)';
+            });
+            button.addEventListener('mouseleave', () => {
+                button.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

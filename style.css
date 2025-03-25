@@ -1,0 +1,149 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('zoro.jpg') no-repeat center center/cover;
+    color: #660000;
+}
+
+header {
+    background: rgba(179, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: rgba(255, 102, 102, 0.8);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic img:hover {
+    transform: scale(1.1);
+}
+
+.about, .projects, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.projects .project {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects .project img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    max-width: 300px; /* Set a maximum width for the image */
+    margin-top: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact form input, .contact form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ff6666;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact form button {
+    padding: 10px;
+    background: linear-gradient(135deg, #b30000, #ff3333);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact form button:hover {
+    background: linear-gradient(135deg, #ff3333, #b30000);
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    background: rgba(179, 0, 0, 0.8);
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.contact .social-links a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.contact .social-links a img {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact .social-links a img:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+}
